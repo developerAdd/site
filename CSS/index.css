@@ -357,12 +357,17 @@
     font-weight: bolder;
   }
   .btnreg span {
-    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+  }
     color: #232323;
   }
   .btninst span {
     font-weight: 400;
     color: #232323;
+  }
+  .btnreg {
+    width: 175px;
   }
 }
 @media (max-width: 340px) {
