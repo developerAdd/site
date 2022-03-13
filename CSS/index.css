@@ -287,26 +287,26 @@
   }
 
   .btnreg {
-    width: 220px;
+    width: 230px;
     height: 50px;
     margin-bottom: 10px;
   }
 
   .btnreg span {
     font-weight: 200;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 20px;
   }
 
   .btninst {
-    width: 220px;
+    width: 230px;
     height: 50px;
     margin-bottom: 10px;
   }
 
   .btninst span {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 29px;
   }
 
@@ -356,18 +356,9 @@
   .btnavto span.span_text {
     font-weight: bolder;
   }
-  .btnreg span {
-    font-size: 10px;
-    line-height: 20px;
-  }
-    color: #232323;
-  }
   .btninst span {
     font-weight: 400;
     color: #232323;
-  }
-  .btnreg {
-    width: 175px;
   }
 }
 @media (max-width: 340px) {
