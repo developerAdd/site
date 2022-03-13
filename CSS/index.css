@@ -356,6 +356,7 @@
   .btnavto span.span_text {
     font-weight: bolder;
   }
+  ..btnreg span,
   .btninst span {
     font-weight: 400;
     color: #232323;
