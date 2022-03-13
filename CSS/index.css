@@ -359,7 +359,7 @@
   ..btnreg span,
   .btninst span {
     font-weight: 400;
-    color: #232323;
+    color: black;
   }
 }
 @media (max-width: 340px) {
