@@ -1,0 +1,86 @@
+<!Doctype html>
+<html lang="ru">
+<head>
+  <link rel="icon" href="../IMG/logotipe.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/about.css">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>регистрация</title>
+  <script type="text/javascript" src="../JQuery/jquery.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="lenta"></div>
+<div class="container">
+  <div class="shapka">
+   <nav class="text_shapka">
+     <ul>
+       <li class="slk"><p><a class="none _btn"  href = "../index.html">главная</a></p></li>
+       <li class="slk"><p><a  class="none _btn"  href ="../HTML/service.html">услуги</a></p></li>
+       <li class="slk"><p><a  class="none _btn"  href ="../HTML/goods.html">товары</a></p></li>
+       <li class="slk"><p><a class="none _btn"  href = "../HTML/user_room.html">личный кабинет</a></p></li>
+     </ul>
+   </nav>
+     <div  class="burger _btn">
+       <span></span>
+     </div>
+  </div>
+</div>
+ <link rel="stylesheet" href="../CSS/reg_index.css">
+ <div class="container">
+  <div class="center">
+    <div class="img_remove">
+      <img class="img_js_click" src="../IMG/remove.svg" alt="">
+    </div>
+    <div class="content">
+      <div class="reg_text">
+        <span><p>Регистрация</p></span>
+      </div>
+      <div class="reg_form">
+        <form id="form_1" method="post" action="#">
+          <div id="error_6" class="error"></div>
+          <input  class="input _req _name _btn" type="text" name="name" placeholder="введите ФИ">
+          <div id="error_2" class="error"></div>
+          <input  type="email" class="input _req _email _btn" name="email" placeholder="введите email">
+          <div id="error_3" class="error"></div>
+          <input  type="password" class="input _req _password_1 input_3 _btn" placeholder="введите пароль">
+          <div id="error_4" class="error"></div>
+          <input  type="password" class="input _req _password_2 _btn" name="password_2" placeholder="повторите пароль">
+          <button  class="_btn" type="button" name="button">
+            <span><p>РЕГИСТРАЦИЯ</p></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+   <div class="popup_1">
+     <div class="popup_remove">
+       <img class="img_js_click_remove" src="../IMG/remove.svg" alt="">
+     </div>
+     <div class="content_popup">
+       <div class="text_popup_1">
+         <span><p>вам на почту был отправлен код</p></span>
+       </div>
+       <div class="popup_1_form">
+         <form  id="form_2" method="post" action="#" class="form_popup_1">
+           <div id="error_6" class="error"></div>
+           <input type="password"  class="input_popup _code _btn" placeholder="введите код">
+           <button  type="button" class="button_popup _btn"><span><p>подтвердить</p></span></button>
+         </form>
+        </div>
+        <div class="popup_2_form">
+          <form id="form_3" action="#" method="post" class="form_popup_2">
+            <div id="s" class="time_text"><span></span></div>
+            <button  class="button_time active _btn" type="button" name="button"><span><p>отправить код</p><span></button>
+          </form>
+        </div>
+     </div>
+   </div>
+   </div>
+ </div>
+ </div>
+ </body>
+ </html>
+ <script type="text/javascript" src="../JS/btn.js"></script>
+ <script type="text/javascript" src="../JS/burger.js"></script>
+  <script type="text/javascript" src="../JS/reg_index.js"></script>

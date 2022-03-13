@@ -1,0 +1,744 @@
+.content {
+  min-height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1244px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+  font-family: "Roboto";
+}
+.adress{
+  font-size: 25px;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 10%;
+}
+body {
+  background-image: url("../IMG/fon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+button {
+  border: none;
+}
+
+select {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+}
+
+.maintext {
+  width: 100%;
+  color: black;
+  font-size: 45px;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  padding-left: 5%;
+}
+
+.block_name {
+  width: 100%;
+  color: black;
+  font-size: 40px;
+  padding-left: 5%;
+  margin-top: 10px;
+}
+
+.flag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 20px;
+  background-color: #006eff;
+  position: absolute;
+  left: 0;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.ru {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.nameandprice {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 50px;
+  width: 90%;
+  height: 60px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 5px;
+          box-shadow: 0 0 5px;
+  border: 3px solid silver;
+  margin-top: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  background-color: white;
+  overflow: hidden;
+  font-weight: normal;
+}
+
+.name,
+.price {
+  z-index: 1;
+}
+
+.price {
+  font-size: 30px;
+  margin-right: -15px;
+  font-weight: bold;
+}
+
+.name {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-right: 10px;
+}
+
+.nameandprice.active {
+  color: white;
+  border: 3px solid #04ff00;
+}
+
+.nameandprice.active .flag {
+  width: 100%;
+  background-color: #04ff00;
+}
+
+.nameandprice._touchNot:hover .flag {
+  background-color: #04ff00;
+}
+
+.nameandprice._touchNot:hover {
+  cursor: pointer;
+}
+
+.nameandprice._touch:active .flag {
+  width: 100%;
+}
+
+.namedata {
+  width: 100%;
+  color: black;
+  padding-left: 5%;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.datatime {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.time_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.time_block select,
+.data_block select {
+  width: 300px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 2px;
+          box-shadow: 0 0 2px;
+  border: 2px solid #006eff;
+  font-size: 25px;
+  padding-left: 5px;
+}
+
+.data_block input {
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 2px;
+          box-shadow: 0 0 2px;
+  border: 2px solid #04ff00;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.data_block .button {
+  background: rgba(0, 0, 0, 0);
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.data_block .button:hover {
+  cursor: pointer;
+}
+
+.data_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text {
+  color: #393939;
+  font-size: 30px;
+  margin: 5px 10px 0px 40px;
+}
+
+.error {
+  color: #ff0808;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.input_but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.namegeo {
+  width: 100%;
+  color: black;
+  padding-left: 5%;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.google {
+  height: 200px;
+  width: 90%;
+  border-radius: 10px;
+  overflow: hidden;
+  border-bottom: 3px solid black;
+}
+
+.google iframe {
+  width: 100%;
+}
+
+.finish {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.all_price {
+  font-size: 35px;
+  border-bottom: 2px solid #ff0808;
+  font-weight: bold;
+}
+
+.finish button {
+  border: 5px solid #04ff00;
+  width: 300px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.finish button span {
+  color: black;
+  letter-spacing: 8px;
+  font-size: 35px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+.finish button._touch:active {
+  background-color: #04ff00;
+}
+
+.finish button._touchNot:hover {
+  cursor: pointer;
+  background-color: #04ff00;
+}
+
+.finish button._touchNot:hover span {
+  color: white;
+}
+
+.text._one.active,
+.text._two.active{
+  color: silver;
+}
+
+.time_option.active,
+.mySelect.active {
+  pointer-events: none;
+  border: 3px solid silver;
+  color: silver;
+}
+.data_block input.active {
+  pointer-events: none;
+  border: 3px solid silver;
+  color: silver;
+}
+
+.button.active {
+  pointer-events: none;
+}
+
+.finish_button.active {
+  pointer-events: none;
+  border: 3px solid silver;
+}
+
+.finish_button.active span {
+  color: silver;
+}
+
+
+@media (max-width: 720px) {
+  .datatime {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .data {
+    margin-bottom: 25px;
+  }
+
+  .maintext {
+    font-size: 35px;
+  }
+
+  .block_name {
+    font-size: 30px;
+  }
+
+  .namegeo {
+    font-size: 30px;
+  }
+  .adress{
+    font-size: 20px;
+  }
+
+  .address {
+    font-size: 20px;
+  }
+
+  .namedata {
+    font-size: 30px;
+  }
+
+  .all_price {
+    font-size: 25px;
+  }
+
+  .finish button {
+    width: 200px;
+    height: 60px;
+  }
+
+  .finish button span {
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 530px) {
+  .maintext {
+    font-size: 30px;
+  }
+
+  .block_name {
+    font-size: 25px;
+  }
+
+  .namegeo {
+    font-size: 25px;
+  }
+  .adress{
+    font-size: 15px;
+  }
+
+  .address {
+    font-size: 20px;
+  }
+
+  .namedata {
+    font-size: 25px;
+  }
+
+  .finish button {
+    width: 180px;
+    height: 50px;
+  }
+
+  .finish button span {
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
+
+  .nameandprice {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 25px;
+  }
+}
+@media (max-width: 395px) {
+  .maintext {
+    font-size: 25px;
+  }
+
+  .block_name {
+    font-size: 22px;
+  }
+
+  .namegeo {
+    font-size: 22px;
+  }
+  .adress{
+    font-size: 13px;
+  }
+
+  .address {
+    font-size: 20px;
+  }
+
+  .namedata {
+    font-size: 22px;
+  }
+
+  .all_price {
+    font-size: 18px;
+  }
+
+  .finish button {
+    width: 150px;
+    height: 50px;
+  }
+
+  .finish button span {
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  .error {
+    font-size: 15px;
+  }
+
+  .nameandprice {
+    height: 60px;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 95%;
+    width: 75%;
+  }
+
+  .price {
+    font-size: 20px;
+    margin-right: -20px;
+  }
+
+  .flag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 20px;
+    background-color: #006eff;
+    position: absolute;
+    left: 0;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+  }
+
+  .ru {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .time_block select,
+.data_block select {
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+.data_block input {
+    width: 180px;
+    height: 35px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 300px) {
+  .maintext {
+    font-size: 17px;
+  }
+
+  .block_name {
+    font-size: 15px;
+  }
+
+  .namegeo {
+    font-size: 15px;
+  }
+  .address {
+    font-size: 10px;
+  }
+
+  .namedata {
+    font-size: 15px;
+  }
+
+  .all_price {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .finish button {
+    width: 150px;
+    height: 50px;
+  }
+
+  .finish button span {
+    font-size: 15px;
+  }
+
+  .error {
+    font-size: 10px;
+  }
+
+  .nameandprice {
+    font-size: 10px;
+    height: 50px;
+  }
+
+  .price {
+    font-size: 15px;
+  }
+
+  .ru {
+    font-size: 15px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  .time_block select,
+.data_block select {
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+  }
+
+.data_block input {
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .finish {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+}

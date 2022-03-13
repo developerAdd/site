@@ -1,0 +1,419 @@
+.content {
+  margin-top: 90px;
+  margin-left: 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.fon_index {
+  background-image: url("../IMG/index_fon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  width: 100%;
+  height: 100%;
+}
+
+.maintext span {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 120px;
+  color: #454457;
+}
+
+.abouttext span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #64637d;
+}
+
+.btnavto {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  height: 80px;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn_fon {
+  -webkit-transition-duration: 1.2s;
+          transition-duration: 1.2s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  background-color: #04ff00;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+.btn_fon::after {
+  content: "";
+  border-radius: 49%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  -webkit-transform: translate(-30%, -95%);
+          transform: translate(-30%, -95%);
+  -webkit-animation: waves 5s infinite linear;
+          animation: waves 5s infinite linear;
+}
+
+.btn_fon::before {
+  content: "";
+  border-radius: 46%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  -webkit-transform: translate(-30%, -95%);
+          transform: translate(-30%, -95%);
+  -webkit-animation: waves 10s infinite linear;
+          animation: waves 10s infinite linear;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    -webkit-transform: translate(-30%, -95%) rotate(0deg);
+            transform: translate(-30%, -95%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-30%, -95%) rotate(360deg);
+            transform: translate(-30%, -95%) rotate(360deg);
+  }
+}
+
+@keyframes waves {
+  0% {
+    -webkit-transform: translate(-30%, -95%) rotate(0deg);
+            transform: translate(-30%, -95%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-30%, -95%) rotate(360deg);
+            transform: translate(-30%, -95%) rotate(360deg);
+  }
+}
+.btnavto._touch:active span.span_text {
+  color: black;
+}
+
+.btnavto._touchNot:hover span.span_text {
+  color: black;
+  cursor: pointer;
+}
+
+.btnavto._touch:active .btn_fon {
+  -webkit-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+}
+
+.btnavto._touchNot:hover .btn_fon {
+  cursor: pointer;
+  -webkit-transform: translate(0px, -100px);
+          transform: translate(0px, -100px);
+}
+
+.btnavto span.span_text {
+  font-family: "Arial";
+  font-size: 50px;
+  letter-spacing: 0.2em;
+  color: white;
+  font-weight: lighter;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+  position: relative;
+  z-index: 1;
+}
+
+.btnreg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 280px;
+  height: 60px;
+  background: rgba(135, 135, 135, 0.5);
+  border-radius: 55px 50px 50px 55px;
+  margin-bottom: 10px;
+}
+
+.btnreg._touch:active {
+  background-color: white;
+}
+
+.btnreg._touchNot:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.btnreg._touchNot:hover span {
+  color: black;
+}
+
+.btnreg img {
+  width: 60px;
+  height: 60px;
+}
+
+.btnreg span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  color: #676767;
+  margin: auto;
+}
+
+.btninst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 280px;
+  height: 60px;
+  background: rgba(135, 135, 135, 0.5);
+  border-radius: 55px 50px 50px 55px;
+  margin-bottom: 10px;
+}
+
+.btninst img {
+  width: 60px;
+  height: 60px;
+}
+
+.btninst span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  color: #676767;
+  margin: auto;
+}
+
+.btninst._touch:active {
+  background-color: white;
+}
+
+.btninst._touchNot:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.btninst._touchNot:hover span {
+  color: black;
+}
+
+@media (max-width: 550px) {
+  .maintext span {
+    font-size: 55px;
+    line-height: 80px;
+  }
+
+  .abouttext {
+    width: 100%;
+  }
+
+  .abouttext span {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .btnavto {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 260px;
+    height: 60px;
+  }
+
+  .btnavto span.span_text {
+    font-size: 35px;
+  }
+
+  .btnreg {
+    width: 220px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .btnreg span {
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  .btninst {
+    width: 220px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .btninst span {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 29px;
+  }
+
+  .btninst img,
+.btnreg img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn_fon::after {
+    -webkit-transform: translate(-30%, -97%);
+            transform: translate(-30%, -97%);
+  }
+
+  .btn_fon::before {
+    -webkit-transform: translate(-30%, -97%);
+            transform: translate(-30%, -97%);
+  }
+
+  @-webkit-keyframes waves {
+    0% {
+      -webkit-transform: translate(-30%, -97%) rotate(0deg);
+              transform: translate(-30%, -97%) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translate(-30%, -97%) rotate(360deg);
+              transform: translate(-30%, -97%) rotate(360deg);
+    }
+  }
+
+  @keyframes waves {
+    0% {
+      -webkit-transform: translate(-30%, -97%) rotate(0deg);
+              transform: translate(-30%, -97%) rotate(0deg);
+    }
+    100% {
+      -webkit-transform: translate(-30%, -97%) rotate(360deg);
+              transform: translate(-30%, -97%) rotate(360deg);
+    }
+  }
+}
+@media (max-width: 450px) {
+  .abouttext span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .btnavto span.span_text {
+    font-weight: bolder;
+  }
+  .btnreg span {
+    font-weight: 400;
+    color: #232323;
+  }
+  .btninst span {
+    font-weight: 400;
+    color: #232323;
+  }
+}
+@media (max-width: 340px) {
+  .maintext span {
+    font-size: 45px;
+    line-height: 80px;
+  }
+
+  .abouttext span {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .btnavto {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    height: 60px;
+  }
+
+  .btnavto span.span_text {
+    font-size: 35px;
+  }
+
+  .btnreg {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .btnreg span {
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .btninst {
+    width: 160px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .btninst span {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .btninst img,
+.btnreg img {
+    width: 50px;
+    height: 50px;
+  }
+}

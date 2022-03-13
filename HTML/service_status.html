@@ -1,0 +1,102 @@
+<!Doctype html>
+<html lang="ru">
+<head>
+  <link rel="icon" href="../IMG/logotipe.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../CSS/about.css">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>УСЛУГИ</title>
+  <script type="text/javascript" src="../JQuery/jquery.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="lenta"></div>
+<div class="container">
+  <div class="shapka">
+   <nav class="text_shapka">
+     <ul>
+       <li class="slk"><p><a class="none _btn"  href = "../index.html">главная</a></p></li>
+       <li class="slk"><p><a  class="none _btn"  href ="../HTML/service.html">услуги</a></p></li>
+       <li class="slk"><p><a  class="none _btn"  href ="../HTML/goods.html">товары</a></p></li>
+       <li class="slk"><p><a class="none _btn"  href = "../HTML/user_room.html">личный кабинет</a></p></li>
+     </ul>
+   </nav>
+     <div  class="burger _btn">
+       <span></span>
+     </div>
+  </div>
+</div>
+
+  <link rel="stylesheet" href="../CSS/service_status.css">
+<div class="content">
+  <div class="maintext"><bold><p>ОФОРМЛЕНИЕ ЗАПИСИ</p></bold></div>
+  <div class="block_name"><p>УСЛУГИ</p></div>
+  <button  type="button"  class="nameandprice _true _btn">
+    <div class="flag"></div>
+    <div class="name">название</div>
+    <div id="price" class="price">цена</div>
+    <span id="ru" class="ru">₽</span>
+  </button>
+  <button  type="button"  class="nameandprice _true _btn">
+    <div class="flag"></div>
+    <div class="name">название</div>
+    <div id="price" class="price">цена</div>
+    <span id="ru" class="ru">₽</span>
+  </button>
+  <button  type="button"  class="nameandprice _true _btn">
+    <div class="flag"></div>
+    <div class="name">название</div>
+    <div id="price" class="price">цена</div>
+    <span id="ru" class="ru">₽</span>
+  </button>
+  <div class="namedata"><p>ВРЕМЯ И ДАТА</p></div>
+  <div class="datatime">
+    <div class="data">
+      <div class="text _one "><p>выберите день</p></div>
+      <div class="data_block">
+        <span id="error_data" class="error"></span>
+        <form id="form_select" class="data_form" action="#" method="post">
+          <select id="mySelect" name="dataSelect" class="mySelect ">
+            <option value=""><p>дата</p></option>
+          </select>
+        </form>
+        <div class="input_but">
+          <form id="form_data" action="#" method="post">
+            <input id= "data_unput" type="text" name="data_unput" class=""placeholder="поиск" onblur="(this.type='text')" onfocus="(this.type='date')">
+          </form>
+          <div id = "data_button" class="button " type="button" name="button">
+            <img src="../IMG/trash.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="time">
+      <div class="time_block">
+        <div class="text _two "><p>выберите доступное время</p></div>
+        <div id="time_error" class="error"></div>
+        <form  id="form_select_time" class="time_form" action="#" method="post">
+          <select  id="time_option" class="time_option " name="">
+            <option><p>интервал времени</p></option>
+          </select>
+        </form>
+        </div>
+    </div>
+  </div>
+  <div class="namegeo"><p>МЕСТОПОЛОЖЕНИЕ</p></div>
+  <span class="adress">Деповская,д. 7, Офис А-104</span>
+  <div class="google">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.6429739630794!2d83.76867691549518!3d53.349646982165645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda45a8d5334eb%3A0xe25d19c47df8c11c!2z0YPQuy4g0JTQtdC_0L7QstGB0LrQsNGPLCA3LCDQkdCw0YDQvdCw0YPQuywg0JDQu9GC0LDQudGB0LrQuNC5INC60YDQsNC5LCA2NTYwMTU!5e0!3m2!1sru!2sru!4v1647145336184!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div class="finish">
+    <button  class="finish_button  _btn">
+      <span><p>записаться</p></span>
+    </button>
+    <div id="all_price" class="all_price"><bold>ИТОГО: СУММА</bold></div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="../JS/btn.js"></script>
+<script type="text/javascript" src="../JS/burger.js"></script>
+  <script type="text/javascript" src="../JS/service_pay.js"></script>
